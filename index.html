@@ -4,157 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nickey Raj Sony - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <style>
-      /* Basic reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
         font-family: "Roboto", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
+        background-color: #f8f9fa;
         color: #333;
       }
 
-      .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-      }
-
       header {
-        background: #343a40;
+        background-color: #007bff;
         color: #fff;
-        padding: 30px 0;
+        padding: 60px 0;
         text-align: center;
-        border-bottom: 3px solid #007bff;
       }
 
       header h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 700;
       }
 
-      header p {
-        margin: 5px 0;
-      }
-
-      header a {
-        color: #007bff;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-
-      header a:hover {
-        text-decoration: underline;
+      .profile-img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-bottom: 15px;
       }
 
       section {
-        padding: 20px;
-        margin: 20px 0;
-        background: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 60px 0;
       }
 
       h2 {
         color: #007bff;
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        font-size: 1.8em;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        text-align: center;
       }
 
       h3 {
         color: #343a40;
-        margin-top: 20px;
-        font-size: 1.5em;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      ul li {
-        padding: 5px 0;
-        position: relative;
-        padding-left: 20px;
-      }
-
-      ul li::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: #007bff;
-        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
       }
 
       footer {
-        background: #343a40;
+        background-color: #007bff;
         color: #fff;
+        padding: 20px 0;
         text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
       }
 
       footer p {
         margin: 0;
       }
 
-      /* Hover effects */
-      ul li:hover {
-        color: #007bff;
-        cursor: pointer;
+      .badge {
+        background-color: #007bff;
+        font-size: 0.85rem;
+        padding: 5px 10px;
       }
 
-      /* Responsive design */
+      .btn-outline-light {
+        border: 2px solid #fff;
+        margin-top: 10px;
+      }
+
+      /* Responsive Design */
       @media (max-width: 768px) {
-        .container {
-          width: 90%;
+        header h1 {
+          font-size: 2rem;
         }
 
-        header h1 {
-          font-size: 2em;
+        .profile-img {
+          width: 140px;
+          height: 140px;
+        }
+
+        .container {
+          padding: 0 20px;
         }
       }
     </style>
   </head>
   <body>
-    <header>
+    <!-- Header Section -->
+    <header class="text-center">
       <div class="container">
+        <img
+          src="Nickey.jpg" 
+          alt="Nickey Raj Sony"
+          class="profile-img"
+        />
         <h1>Nickey Raj Sony</h1>
         <p>Bangalore, Karnataka, India</p>
         <p>
           Email:
-          <a href="mailto:nickey.soni2000@gmail.com"
+          <a href="mailto:nickey.soni2000@gmail.com" class="text-white"
             >nickey.soni2000@gmail.com</a
           >
           | Phone: +91 9591173317
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/nickey-raj-sony-4191291b2/"
+          <a
+            href="https://www.linkedin.com/in/nickey-raj-sony-4191291b2/"
+            class="btn btn-outline-light btn-sm"
             >LinkedIn</a
           >
-          | <a href="https://github.com/nickeyraj">GitHub</a>
+          <a href="https://github.com/nickeyraj" class="btn btn-outline-light btn-sm"
+            >GitHub</a
+          >
         </p>
       </div>
     </header>
-    <section class="summary">
+
+    <!-- Summary Section -->
+    <section class="bg-light">
       <div class="container">
         <h2>Summary</h2>
-        <p>
+        <p class="text-center">
           Experienced technical support professional with a Bachelor's in
           Computer Applications and ongoing pursuit of MCA. Proficient in Python
           programming and SQL, certified in Python and automation. Seeking a
@@ -162,123 +140,181 @@
         </p>
       </div>
     </section>
-    <section class="experience">
+
+    <!-- Experience Section -->
+    <section>
       <div class="container">
         <h2>Experience</h2>
-        <h3>Representative Operation</h3>
-        <p>
-          <b>
-            Concentrix Services India Pvt Ltd | March 2023 - October 2023 |
-            Bangalore, India
-          </b>
-        </p>
-        <ul>
-          <li>
-            Delivered technical support and resolved issues for users of
-            commercial Lenovo laptops.
-          </li>
-          <li>
-            Managed and resolved customer inquiries and concerns pertaining to
-            laptop issues via phone communication.
-          </li>
-          <li>
-            Supported IT staff in troubleshooting and resolving technical issues
-            as needed.
-          </li>
-        </ul>
-        <h3>Student Partner 19/20 (Internship)</h3>
-        <p><b>Internshala | September 2020 - December 2020 | India</b></p>
-        <ul>
-          <li>
-            Persuaded peers to enroll in courses by employing tailored
-            communication.
-          </li>
-          <li>
-            Developed strong communication skills while promoting academic goals
-            as a Student Partner.
-          </li>
-        </ul>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Representative Operation</h3>
+                <p>
+                  <b>
+                    Concentrix Services India Pvt Ltd | March 2023 - October
+                    2023 | Bangalore, India
+                  </b>
+                </p>
+                <ul>
+                  <li>
+                    Delivered technical support and resolved issues for Lenovo
+                    users.
+                  </li>
+                  <li>
+                    Managed and resolved customer inquiries via phone
+                    communication.
+                  </li>
+                  <li>
+                    Assisted IT staff in resolving technical issues as needed.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Student Partner 19/20 (Internship)</h3>
+                <p><b>Internshala | September 2020 - December 2020 | India</b></p>
+                <ul>
+                  <li>
+                    Persuaded peers to enroll in courses by employing tailored
+                    communication.
+                  </li>
+                  <li>
+                    Promoted academic goals and developed communication skills
+                    as a Student Partner.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="projects">
+
+    <!-- Projects Section -->
+    <section class="bg-light">
       <div class="container">
         <h2>Projects</h2>
-        <h3>Hotel Management System</h3>
-        <p>Academics | August 2022 - September 2022</p>
-        <ul>
-          <li>
-            Created a web project employing PHP and MySQL to meet course
-            requirements.
-          </li>
-          <li>
-            Designed a Hotel Management System to streamline hotel operations,
-            including tasks like room assignments, check-in/out procedures, and
-            billing.
-          </li>
-          <li>
-            Implemented features facilitating real-time booking on a reservation
-            site, enabling users to browse hotels, view inventory, and check
-            availability.
-          </li>
-        </ul>
-        <h3>Pharmacy Management System</h3>
-        <p>Academics | March 2021 - April 2021</p>
-        <ul>
-          <li>
-            Developed a C# project using Visual Studio and MySQL for a course
-            requirement.
-          </li>
-          <li>
-            Designed an interactive Pharmacy Management System to digitize
-            manual processes, streamline stock and billing management, and
-            maintain comprehensive medicine records.
-          </li>
-          
-        </ul>
-        
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Hotel Management System</h3>
+                <p>Academics | August 2022 - September 2022</p>
+                <ul>
+                  <li>
+                    Created a web project using PHP, MySQL, HTML, and Bootstrap.
+                  </li>
+                  <li>
+                    Designed a system to streamline hotel operations like
+                    check-in/out, billing, and room assignments.
+                  </li>
+                  <li>
+                    Integrated a real-time booking feature for users.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Pharmacy Management System</h3>
+                <p>Academics | March 2021 - April 2021</p>
+                <ul>
+                  <li>
+                    Developed a C# project using Visual Studio and MySQL.
+                  </li>
+                  <li>
+                    Designed an interactive system to digitize stock and billing
+                    management for pharmacies.
+                  </li>
+                  <li>
+                    Improved manual processes for maintaining medicine records.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="education">
+
+    <!-- Education Section -->
+    <section>
       <div class="container">
         <h2>Education</h2>
-        <h3>Master of Computer Applications</h3>
-        <p>Amity University (Online) - Noida, India | 2025</p>
-        <h3>Bachelor of Computer Applications</h3>
-        <p>St Claret College - Bangalore, India | 2022</p>
-        <h3>12th (ISC)</h3>
-        <p> St. Joseph's School - Madhya Pradesh, India | 2019</p>
-        <h3>10th (ICSE)</h3>
-        <p> St. Joseph's School - Madhya Pradesh, India | 2017</p>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Master of Computer Applications</h3>
+                <p>Amity University (Online) - Noida, India | Expected 2025</p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-body">
+                <h3 class="card-title">Bachelor of Computer Applications</h3>
+                <p>St Claret College - Bangalore, India | 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">12th (ISC)</h3>
+                <p>St. Joseph's School - Madhya Pradesh, India | 2019</p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-body">
+                <h3 class="card-title">10th (ICSE)</h3>
+                <p>St. Joseph's School - Madhya Pradesh, India | 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="skills">
+
+    <!-- Skills Section -->
+    <section class="bg-light">
       <div class="container">
         <h2>Skills</h2>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>SQL</li>
-          <li>HTML, CSS</li>
-          <li>Microsoft Office (Excel, PowerPoint, Word)</li>
-          <li>Automation Anywhere</li>
-        </ul>
+        <div class="d-flex flex-wrap justify-content-center">
+          <span class="badge mx-2">Python</span>
+          <span class="badge mx-2">Java</span>
+          <span class="badge mx-2">SQL</span>
+          <span class="badge mx-2">HTML, CSS</span>
+          <span class="badge mx-2">Microsoft Office</span>
+          <span class="badge mx-2">Automation Anywhere</span>
+        </div>
       </div>
     </section>
-    <section class="certifications">
+
+    <!-- Certifications Section -->
+    <section>
       <div class="container">
         <h2>Certifications</h2>
-        <ul>
+        <ul class="list-unstyled text-center">
           <li>Getting Started with Python - University of Michigan (Coursera) | 2022</li>
           <li>Web Development - Udemy | 2022</li>
           <li>AI for Everyone - deeplearning.ai (Coursera) | 2021</li>
-          
         </ul>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <div class="container">
         <p>&copy; 2024 Nickey Raj Sony</p>
       </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
